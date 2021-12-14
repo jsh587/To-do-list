@@ -1,0 +1,89 @@
+#container {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto ;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+}
+#formContainer {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#tdList {
+    font-size: 5vh;
+}
+
+#input-task-label {
+    flex-grow: 5;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+#add-task-button-label {
+    flex-grow: 1;
+    height: 3vh;
+    display: flex;
+    justify-content: right;
+}
+
+#input-task {
+    width: 100%;
+    height: 100%;
+    background: 0;
+    border: none;
+    border-bottom: darkgrey solid 2px;
+    transition: border-bottom-color .5s ease-in-out;
+}
+
+::placeholder {
+    color: black;
+    transition: color ease-in-out .5s;
+}
+
+#input-task:focus {
+    width: 100%;
+    height: 100%;
+    background: 0;
+    border: none;
+    outline: none;
+    border-bottom: black solid 2px;
+    color: white;
+}
+
+#add-task-button {
+    width: 50%;
+    height: 100%;
+    color: white;
+    background-color: gray;
+    margin-left: 30%;
+    flex-grow: 1;
+}
+
+#task-list {
+    width: 80%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cBox {
+    flex-grow: 1;
+}
+
+.task {
+    flex-grow: 9;
+    text-decoration: none;
+}
+.delete-btn {
+    flex-grow: 1;
+}
